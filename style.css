@@ -1,0 +1,218 @@
+*{ 
+    box-sizing: border-box; 
+} 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap'); 
+ 
+ 
+body { 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+.header-top{ 
+    width: 1600px; 
+    display: flex;   
+    margin-left: 215px; 
+} 
+ 
+.header-menu{ 
+    list-style: none; 
+    text-decoration: none; 
+    display: flex; 
+    padding-left: 93px ; 
+    margin-top: 32px; 
+    margin-left:215px ; 
+} 
+ 
+.header-menu li{ 
+    padding-right: 50px; 
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight:500; 
+} 
+ 
+.header-menu li a{ 
+    text-decoration: none; 
+} 
+ 
+ 
+.header-logo{ 
+    font-family: 'Raleway', sans-serif; 
+    margin-top: 24px; 
+    text-decoration: none;
+} 
+ 
+.header-contact-info{ 
+    margin-left: 294px; 
+    list-style: none; 
+    text-decoration: none; 
+    display: flex; 
+    margin-top: 32px; 
+    font-family: 'Roboto', sans-serif; 
+} 
+ 
+.header-contact-info li{ 
+    text-decoration: none; 
+    padding-right:50px ; 
+} 
+ 
+.header-contact-info li a{ 
+    text-decoration: none; 
+} 
+ 
+.header-herro{ 
+    background-color: #2F303A; 
+    height: 600px;  
+    width: 1600px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;     
+} 
+ 
+.herro-text{ 
+    color:#FFFFFF; 
+    font-family: 'Roboto', sans-serif; 
+    font-size:44px; 
+} 
+ 
+.header-button{ 
+    background: #2196F3; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    border-radius: 4px; 
+    width: 216px; 
+    height: 50px; 
+    font-family: 'Roboto', sans-serif; 
+    color: #FFFFFF; 
+    border: 0; 
+}
+
+.about{
+    margin-top: 95px;
+    margin-bottom: 95px;
+}
+
+.about-list-main{
+    width: 1170px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 30px;
+    margin: 0 auto;
+    list-style: none;
+    
+}
+
+.about-list{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.gonna-do-title{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+.gonna-do-photos{
+    list-style: none;
+    width: 1170px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+.team-card{
+    width: 270px;
+    height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-cards
+{   list-style: none;
+    width: 1170px;
+    display: grid;
+    grid-template-columns:repeat(4,270px);
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+.our-team-desc{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+.team-card img{
+    width: 279px;
+    height: 260px;
+}
+
+.team-name{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.position{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: #757575;
+    font-size: 16px;
+}
+
+footer{
+    width: 1600px;
+    height: 252px;
+    background-color: #2F303A;
+
+    margin: 0 auto;
+}
+
+.footer-logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 215px;
+}
+
+.adress-item{
+    font-family: 'Roboto',sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom:9px;
+    text-decoration: none;
+
+}
+
+.contact-item{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom:9px;
+    text-decoration: none;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-left: 215px;
+    list-style-type: none;
+    padding-top: 60px;
+}
+
