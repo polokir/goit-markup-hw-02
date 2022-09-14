@@ -216,3 +216,47 @@ footer{
     padding-top: 60px;
 }
 
+.button-panel {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.btns{
+    margin: 0 auto;
+    margin-top: 94px;
+    margin-bottom: 56px;
+}
+
+.btn-item{
+    list-style: none;
+    margin-right: 8px;
+}
+
+.btn{
+    min-width: 73px;
+    width: auto;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: black;
+}
+
+.btn:hover{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+.goods{
+    margin: 0 auto;
+    margin-left: 215px;
+}
+.goods-list{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-auto-rows: 404px;
+    list-style: none;
+}
+.dedcription{
+    list-style: none;
+}
