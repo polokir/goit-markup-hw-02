@@ -3,10 +3,15 @@
 } 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap'); 
  
+:root{
+    --hover-color:#2196F3;
+}
  
 body { 
     margin: 0; 
     padding: 0; 
+    font-family: 'Roboto', sans-serif; 
+    color: black;
 } 
  
 .header-top{ 
@@ -27,19 +32,27 @@ body {
 .header-menu li{ 
     padding-right: 50px; 
     text-decoration: none; 
-    font-family: 'Roboto', sans-serif; 
     font-weight:500; 
 } 
  
 .header-menu li a{ 
     text-decoration: none; 
+    color: black;
 } 
- 
- 
+
+.header-menu li a:hover{
+    color:var(--hover-color);
+}
+
+
 .header-logo{ 
-    font-family: 'Raleway', sans-serif; 
     margin-top: 24px; 
     text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.9;
+    color: black;
 } 
  
 .header-contact-info{ 
@@ -48,7 +61,7 @@ body {
     text-decoration: none; 
     display: flex; 
     margin-top: 32px; 
-    font-family: 'Roboto', sans-serif; 
+   
 } 
  
 .header-contact-info li{ 
@@ -58,7 +71,15 @@ body {
  
 .header-contact-info li a{ 
     text-decoration: none; 
+    color: black;
 } 
+
+.header-contact-info li a:hover{
+    color: #2196F3;
+}
+.header-contact-info li a:focus{
+    color: var(--hover-color);
+}
  
 .header-herro{ 
     background-color: #2F303A; 
@@ -74,19 +95,18 @@ body {
  
 .herro-text{ 
     color:#FFFFFF; 
-    font-family: 'Roboto', sans-serif; 
     font-size:44px; 
 } 
  
 .header-button{ 
-    background: #2196F3; 
+    background: var(--hover-color); 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px; 
     width: 216px; 
     height: 50px; 
-    font-family: 'Roboto', sans-serif; 
     color: #FFFFFF; 
     border: 0; 
+    cursor: pointer;
 }
 
 .about{
@@ -105,14 +125,11 @@ body {
 }
 
 .about-list{
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 }
 .gonna-do-title{
     text-align: center;
-    font-family: 'Roboto',sans-serif;
     font-size: 36px;
     margin-bottom: 50px;
 }
@@ -130,7 +147,7 @@ body {
     width: 270px;
     height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-cards
@@ -143,10 +160,9 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 94px;
 }
 .our-team-desc{
-    font-family: 'Roboto',sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
 }
 .team-card img{
@@ -156,16 +172,16 @@ border-radius: 0px 0px 4px 4px;
 
 .team-name{
     text-align: center;
-    font-family: 'Roboto',sans-serif;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
 }
 
 .position{
     text-align: center;
-    font-family: 'Roboto',sans-serif;
     color: #757575;
     font-size: 16px;
+    line-height: 1.18;
+
 }
 
 footer{
@@ -178,10 +194,9 @@ footer{
 
 .footer-logo{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     margin-bottom: 20px;
     color: #FFFFFF;
     text-decoration: none;
@@ -189,19 +204,15 @@ footer{
 }
 
 .adress-item{
-    font-family: 'Roboto',sans-serif;
     color: #FFFFFF;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     margin-bottom:9px;
     text-decoration: none;
 
 }
 
 .contact-item{
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom:9px;
@@ -217,10 +228,13 @@ footer{
 }
 
 .button-panel {
+    width: 775px;
     display: flex;
     margin: 0 auto;
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
+    list-style: none;
+    
 }
 
 .btns{
@@ -229,34 +243,65 @@ footer{
     margin-bottom: 56px;
 }
 
-.btn-item{
-    list-style: none;
-    margin-right: 8px;
-}
+
 
 .btn{
     min-width: 73px;
-    width: auto;
     height: 38px;
     background: #FFFFFF;
     border-radius: 4px;
     color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0;
+    padding: 6px 25px;
+    cursor: pointer;
 }
 
-.btn:hover{
-    background-color: #2196F3;
+.btn:hover,:focus    {
+    background-color: var(--hover-color);
     color: #FFFFFF;
 }
 .goods{
     margin: 0 auto;
-    margin-left: 215px;
+   
 }
 .goods-list{
     display: grid;
     grid-template-columns: repeat(3, 370px);
     grid-auto-rows: 404px;
     list-style: none;
+    gap:30px ;
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 95px;
 }
 .dedcription{
     list-style: none;
+}
+
+.good-title{ 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.good-text{
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em
+}
+
+.goods-picture{
+    width: 370px;
+    height: 294px;
+}
+
+.blue-txt{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--hover-color);
 }
