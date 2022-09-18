@@ -1,101 +1,110 @@
 *{ 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 } 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap'); 
  
 :root{
     --hover-color:#2196F3;
+    --main-color: #212121;
+    --second-font-color: #FFFFFF;
+    --contact-color: #757575;
+    --herro-bg: #2F303A;
+    --our-team-color:#F5F4FA;
 }
  
 body { 
-    margin: 0; 
-    padding: 0; 
     font-family: 'Roboto', sans-serif; 
-    color: black;
+    color: var(--main-color);
+    font-size: 14px;
+    letter-spacing: 0.03;
 } 
  
 .header-top{ 
     width: 1600px; 
-    display: flex;   
-    margin-left: 215px; 
 } 
  
 .header-menu{ 
     list-style: none; 
     text-decoration: none; 
-    display: flex; 
-    padding-left: 93px ; 
-    margin-top: 32px; 
-    margin-left:215px ; 
+    
 } 
  
 .header-menu li{ 
-    padding-right: 50px; 
     text-decoration: none; 
     font-weight:500; 
 } 
  
-.header-menu li a{ 
+.header-link{ 
     text-decoration: none; 
-    color: black;
+    color: var(--main-color);
 } 
 
-.header-menu li a:hover{
+.header-link:hover{
     color:var(--hover-color);
 }
 
 
 .header-logo{ 
-    margin-top: 24px; 
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.9;
-    color: black;
+    color: var(--main-color);
 } 
+
  
 .header-contact-info{ 
-    margin-left: 294px; 
     list-style: none; 
     text-decoration: none; 
-    display: flex; 
-    margin-top: 32px; 
-   
+    
 } 
  
 .header-contact-info li{ 
     text-decoration: none; 
-    padding-right:50px ; 
 } 
  
-.header-contact-info li a{ 
+.contact-link{ 
     text-decoration: none; 
-    color: black;
+    color: var(--contact-color);
 } 
 
-.header-contact-info li a:hover{
-    color: #2196F3;
+.contact-link:hover{
+    color: var(--hover-color);
 }
-.header-contact-info li a:focus{
+.contact-link:focus{
     color: var(--hover-color);
 }
  
 .header-herro{ 
-    background-color: #2F303A; 
+    background-color: var(--herro-bg); 
     height: 600px;  
     width: 1600px; 
-    margin: 0 auto; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
     text-align: center;     
 } 
+
+.about-desc{  
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap; 
+    clip-path: insert(100%);
+    clip: rect (0 0 0 0); 
+    overflow: hidden;
+}
+
  
 .herro-text{ 
-    color:#FFFFFF; 
+    color:var(--second-font-color); 
     font-size:44px; 
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 60px;
 } 
  
 .header-button{ 
@@ -104,24 +113,14 @@ body {
     border-radius: 4px; 
     width: 216px; 
     height: 50px; 
-    color: #FFFFFF; 
+    color: var(--second-font-color);; 
     border: 0; 
     cursor: pointer;
 }
 
-.about{
-    margin-top: 95px;
-    margin-bottom: 95px;
-}
-
 .about-list-main{
     width: 1170px;
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    gap: 30px;
-    margin: 0 auto;
     list-style: none;
-    
 }
 
 .about-list{
@@ -131,16 +130,10 @@ body {
 .gonna-do-title{
     text-align: center;
     font-size: 36px;
-    margin-bottom: 50px;
 }
 .gonna-do-photos{
     list-style: none;
     width: 1170px;
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 30px;
-    margin: 0 auto;
-    margin-bottom: 180px;
 }
 
 .team-card{
@@ -153,11 +146,7 @@ body {
 .team-cards
 {   list-style: none;
     width: 1170px;
-    display: grid;
-    grid-template-columns:repeat(4,270px);
-    margin: 0 auto;
-    gap: 30px;
-    margin-bottom: 94px;
+    background-color: var(--our-team-color);
 }
 .our-team-desc{
     font-weight: 700;
@@ -178,18 +167,15 @@ body {
 
 .position{
     text-align: center;
-    color: #757575;
+    color: var(--contact-color);
     font-size: 16px;
     line-height: 1.18;
-
 }
 
 footer{
     width: 1600px;
     height: 252px;
-    background-color: #2F303A;
-
-    margin: 0 auto;
+    background-color: var(--herro-bg);
 }
 
 .footer-logo{
@@ -197,60 +183,38 @@ footer{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    margin-bottom: 20px;
-    color: #FFFFFF;
+    color: var(--second-font-color);
     text-decoration: none;
-    margin-left: 215px;
 }
 
 .adress-item{
-    color: #FFFFFF;
+    color: var(--second-font-color);
     font-size: 14px;
     line-height: 1.7;
-    margin-bottom:9px;
     text-decoration: none;
-
 }
 
 .contact-item{
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom:9px;
     text-decoration: none;
 }
 
 .contacts{
-    display: flex;
-    flex-direction: column;
     margin-left: 215px;
     list-style-type: none;
-    padding-top: 60px;
 }
 
 .button-panel {
     width: 775px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between; 
-    align-items: center; 
-    list-style: none;
-    
+    list-style: none; 
 }
-
-.btns{
-    margin: 0 auto;
-    margin-top: 94px;
-    margin-bottom: 56px;
-}
-
-
 
 .btn{
     min-width: 73px;
     height: 38px;
-    background: #FFFFFF;
+    background: var(--second-font-color);
     border-radius: 4px;
-    color: black;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -259,23 +223,19 @@ footer{
     cursor: pointer;
 }
 
-.btn:hover,:focus    {
+.btn:hover{
     background-color: var(--hover-color);
-    color: #FFFFFF;
+    color: var(--second-font-color);
 }
-.goods{
-    margin: 0 auto;
-   
+
+.btn:focus{
+    background-color: var(--hover-color);
+    color: var(--second-font-color);
 }
+
 .goods-list{
-    display: grid;
-    grid-template-columns: repeat(3, 370px);
-    grid-auto-rows: 404px;
     list-style: none;
-    gap:30px ;
     width: 1170px;
-    margin: 0 auto;
-    margin-bottom: 95px;
 }
 .dedcription{
     list-style: none;
@@ -291,7 +251,6 @@ footer{
 .good-text{
     font-size: 16px;
     line-height: 1.875;
-    letter-spacing: 0.03em
 }
 
 .goods-picture{
@@ -304,4 +263,5 @@ footer{
     font-size: 26px;
     line-height: 1.19;
     color: var(--hover-color);
+    font-family: 'Raleway';
 }
