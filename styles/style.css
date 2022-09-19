@@ -12,6 +12,7 @@
     --contact-color: #757575;
     --herro-bg: #2F303A;
     --our-team-color:#F5F4FA;
+    --contact-footer:rgba(255, 255, 255, 0.6);
 }
  
 body { 
@@ -196,7 +197,7 @@ footer{
 
 .contact-item{
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contact-color);
     text-decoration: none;
 }
 
