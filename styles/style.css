@@ -1,7 +1,5 @@
 *{ 
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
 } 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap'); 
  
@@ -12,14 +10,12 @@
     --contact-color: #757575;
     --herro-bg: #2F303A;
     --our-team-color:#F5F4FA;
-    --contact-footer:rgba(255, 255, 255, 0.6);
+    --contact-footer:#FFFFFF99;
 }
  
 body { 
     font-family: 'Roboto', sans-serif; 
     color: var(--main-color);
-    font-size: 14px;
-    letter-spacing: 0.03;
 } 
  
 .header-top{ 
@@ -28,19 +24,23 @@ body {
  
 .header-menu{ 
     list-style: none; 
-    text-decoration: none; 
-    
+    text-decoration: none;    
 } 
  
 .header-menu li{ 
     text-decoration: none; 
-    font-weight:500; 
 } 
+
+
  
 .header-link{ 
     text-decoration: none; 
     color: var(--main-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
 } 
+
 
 .header-link:hover{
     color:var(--hover-color);
@@ -78,7 +78,9 @@ body {
 .contact-link:focus{
     color: var(--hover-color);
 }
- 
+.current{
+    color: var(--hover-color);
+}
 .header-herro{ 
     background-color: var(--herro-bg); 
     height: 600px;  
@@ -106,6 +108,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.06em;
     line-height: 60px;
+    font-weight: 900;
 } 
  
 .header-button{ 
@@ -117,6 +120,11 @@ body {
     color: var(--second-font-color);; 
     border: 0; 
     cursor: pointer;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
 }
 
 .about-list-main{
@@ -124,13 +132,28 @@ body {
     list-style: none;
 }
 
-.about-list{
+.about-title{
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
+
+.about-text{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+
+
 .gonna-do-title{
-    text-align: center;
+    font-weight: 700;
     font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
 }
 .gonna-do-photos{
     list-style: none;
@@ -147,7 +170,12 @@ body {
 .team-cards
 {   list-style: none;
     width: 1170px;
+    
+}
+
+.our-team{
     background-color: var(--our-team-color);
+
 }
 .our-team-desc{
     font-weight: 700;
@@ -164,6 +192,7 @@ body {
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
+    font-weight: 500;
 }
 
 .position{
@@ -171,11 +200,10 @@ body {
     color: var(--contact-color);
     font-size: 16px;
     line-height: 1.18;
+    color: var(--contact-color);
 }
 
 footer{
-    width: 1600px;
-    height: 252px;
     background-color: var(--herro-bg);
 }
 
@@ -193,16 +221,21 @@ footer{
     font-size: 14px;
     line-height: 1.7;
     text-decoration: none;
+    letter-spacing: 0.03em;
+    font-style: normal;
 }
 
 .contact-item{
     font-size: 14px;
-    color: var(--contact-color);
+    color: var(--contact-footer);
     text-decoration: none;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .contacts{
-    margin-left: 215px;
     list-style-type: none;
 }
 
@@ -212,6 +245,7 @@ footer{
 }
 
 .btn{
+    font-family:'Roboto', serif;
     min-width: 73px;
     height: 38px;
     background: var(--second-font-color);
@@ -222,6 +256,7 @@ footer{
     border: 0;
     padding: 6px 25px;
     cursor: pointer;
+    background-color: var(--our-team-color);
 }
 
 .btn:hover{
@@ -252,6 +287,7 @@ footer{
 .good-text{
     font-size: 16px;
     line-height: 1.875;
+    color: var(--contact-color);
 }
 
 .goods-picture{
