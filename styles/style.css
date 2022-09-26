@@ -141,8 +141,7 @@ body {
 .about-title{
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
@@ -150,7 +149,6 @@ body {
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color: var(--contact-color);
 }
 
@@ -267,7 +265,6 @@ color: var(--hover-color);
     font-size: 16px;
     line-height: 1.6;
     border: 0;
-    padding: 6px 25px;
     cursor: pointer;
     background-color: var(--our-team-color);
     letter-spacing: 0.03em;
