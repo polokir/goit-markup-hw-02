@@ -22,7 +22,7 @@ body {
 } 
  
 .header-top{ 
-    width: 1600px; 
+    width: 1170px; 
 } 
  
 .header-menu{ 
@@ -228,12 +228,20 @@ footer{
     letter-spacing: 0.03em;
     font-style: normal;
 }
-.footer-curent:hover{
+
+.adress-item:hover{
 color: var(--hover-color);
 }
 
-.footer-curent:focus{
-color: var(--hover-color);
+.adress-item:focus{
+    color: var(--hover-color);
+}
+
+.contact-item:hover{
+    color: var(--hover-color);
+}
+.contact-item:focus{
+    color: var(--hover-color);
 }
 
 .contact-item{
